@@ -5,10 +5,6 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowIntro", "SpecFlowIntro\SpecFlowIntro.csproj", "{1D018D33-1934-41F2-B3A5-F0104C4E48EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBankSP.Test", "WebBank.Test\WebBankSP.Test.csproj", "{4EFE5628-E6DA-4177-932F-84FE2CCBA573}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBankSP", "WebBank\WebBankSP.csproj", "{2240CB09-04BD-4D37-B631-70F66EEB29CD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{1D018D33-1934-41F2-B3A5-F0104C4E48EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D018D33-1934-41F2-B3A5-F0104C4E48EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D018D33-1934-41F2-B3A5-F0104C4E48EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4EFE5628-E6DA-4177-932F-84FE2CCBA573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4EFE5628-E6DA-4177-932F-84FE2CCBA573}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4EFE5628-E6DA-4177-932F-84FE2CCBA573}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4EFE5628-E6DA-4177-932F-84FE2CCBA573}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2240CB09-04BD-4D37-B631-70F66EEB29CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2240CB09-04BD-4D37-B631-70F66EEB29CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2240CB09-04BD-4D37-B631-70F66EEB29CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2240CB09-04BD-4D37-B631-70F66EEB29CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
