@@ -19,6 +19,18 @@ namespace WebBankSP
 
             //Response.Redirect("IndexSP.aspx");
 
+            var id = this.txtAccountNo.Text.Trim();
+            var password = this.txtPassword.Text;
+
+            if (id == "1234" && password=="Irene")
+            {
+                Response.Redirect("IndexSP.aspx");
+            }
+            if(id=="1234"&& password == "Yiqun")
+            {
+                this.Message.Text = @"Account No. and Password not matched.";
+            }
+
         }
 
     }
