@@ -15,9 +15,10 @@ namespace WebBankSP
         }
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            this.Message.Text = @"Account No. and Password not matched";
+            //this.Message.Text = @"Account No. and Password not matched";
 
             //Response.Redirect("IndexSP.aspx");
+
         }
 
     }

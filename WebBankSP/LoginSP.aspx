@@ -14,7 +14,7 @@
         Password   :
         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox><br />
         
-        <asp:Button ID="btnLogin" runat="server" Text="Confirm Login" OnClick="btnLogin_Click" /><br />
+        <asp:Button ID="btnLogin" runat="server" Text="ConfirmLogin" OnClick="btnLogin_Click" /><br />
         <asp:Label ID="Message" runat="server"></asp:Label>
     
     </div>
