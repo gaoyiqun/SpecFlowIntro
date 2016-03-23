@@ -22,15 +22,28 @@ namespace WebBankSP
             var id = this.txtAccountNo.Text.Trim();
             var password = this.txtPassword.Text;
 
-            if (id == "1234" && password=="Irene")
+            var authentication = new Authentication();
+            bool isValid = authentication.Verify(id, password);
+
+            if (isValid==true)
             {
-                Response.Redirect("IndexSP.aspx");
+                LoginSucceeded();
             }
-            if(id=="1234"&& password == "Yiqun")
+            else
             {
-                this.Message.Text = @"Account No. and Password not matched.";
+                LoginFailed();
             }
 
+        }
+
+        private void LoginFailed()
+        {
+            this.Message.Text = @"Account No. and Password not matched.";
+        }
+
+        private void LoginSucceeded()
+        {
+            Response.Redirect("IndexSP.aspx");
         }
 
     }

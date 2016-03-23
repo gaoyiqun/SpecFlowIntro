@@ -87,6 +87,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Authentication.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Authentication.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AuthenticationSteps.cs" />
     <Compile Include="LoginSP.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,6 +104,10 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="Authentication.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Authentication.feature.cs</LastGenOutput>
     </None>
     <None Include="LoginSP.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
