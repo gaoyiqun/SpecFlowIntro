@@ -81,6 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication.cs" />
+    <Compile Include="Doc.cs" />
     <Compile Include="IndexSP.aspx.cs">
       <DependentUpon>IndexSP.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +96,7 @@
     <Compile Include="LoginSP.aspx.designer.cs">
       <DependentUpon>LoginSP.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MyHash.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

@@ -93,12 +93,24 @@
       <DependentUpon>Authentication.feature</DependentUpon>
     </Compile>
     <Compile Include="AuthenticationSteps.cs" />
+    <Compile Include="Doc.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Doc.feature</DependentUpon>
+    </Compile>
+    <Compile Include="DocSteps.cs" />
     <Compile Include="LoginSP.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginSP.feature</DependentUpon>
     </Compile>
     <Compile Include="LoginSteps.cs" />
+    <Compile Include="MyHash.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyHash.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MyHashSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -109,9 +121,17 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Authentication.feature.cs</LastGenOutput>
     </None>
+    <None Include="Doc.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Doc.feature.cs</LastGenOutput>
+    </None>
     <None Include="LoginSP.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>LoginSP.feature.cs</LastGenOutput>
+    </None>
+    <None Include="MyHash.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MyHash.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
