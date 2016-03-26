@@ -4,6 +4,15 @@ namespace WebBankSP
 {
     public class Authentication
     {
+        private IHash _hash;
+        private IDoc _doc;
+
+        public Authentication(IHash hash, IDoc doc) 
+        {
+            this._hash = hash;
+            this._doc = doc;
+        }
+
         public bool Verify(string id, string inputPassword)
         {
             string passwordFromDoc = this.GetPasswordFromDoc(id);
@@ -14,6 +23,21 @@ namespace WebBankSP
             return isValid;
         }
 
+        private string GetHash(string inputPassword)
+        {
+            var result = this._hash.GetHash(inputPassword);
+
+            return result;
+        }
+
+        private string GetPasswordFromDoc(string id)
+        {
+            var password = this._doc.GetPassword(id);
+
+            return password;
+        }
+
+        /**
         private string GetHash(string inputPassword)
         {
             var hash = new MyHash();
@@ -31,6 +55,7 @@ namespace WebBankSP
 
             return docPassword;
         }
+        **/
 
         /**
    if(id == "1234"&& password == "Irene")

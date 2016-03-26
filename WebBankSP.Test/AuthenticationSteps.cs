@@ -12,7 +12,7 @@ namespace WebBankSP.Test
         [BeforeScenario("Authentication")]
         public static void BeforeFeatureAuthentication()
         {
-            target = new Authentication();
+            target = new Authentication(new MyHash(), new Doc());
             ScenarioContext.Current.Clear();
         }
 

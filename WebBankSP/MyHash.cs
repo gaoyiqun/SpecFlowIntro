@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WebBankSP
 {
-    public class MyHash
+    public class MyHash: IHash
     {
 
         public string GetHash(string inputPassword)

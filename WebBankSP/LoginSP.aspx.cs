@@ -22,7 +22,7 @@ namespace WebBankSP
             var id = this.txtAccountNo.Text.Trim();
             var password = this.txtPassword.Text;
 
-            var authentication = new Authentication();
+            var authentication = new Authentication(new MyHash(), new Doc());
             bool isValid = authentication.Verify(id, password);
 
             if (isValid==true)

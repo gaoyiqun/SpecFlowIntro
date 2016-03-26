@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WebBankSP
 {
-    public class Doc
+    public class Doc : IDoc
     {
         private Dictionary<string, string> _data = new Dictionary<string, string>();
       
