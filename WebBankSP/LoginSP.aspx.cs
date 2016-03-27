@@ -13,6 +13,7 @@ namespace WebBankSP
         {
 
         }
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             //this.Message.Text = @"Account No. and Password not matched";
@@ -22,7 +23,8 @@ namespace WebBankSP
             var id = this.txtAccountNo.Text.Trim();
             var password = this.txtPassword.Text;
 
-            var authentication = new Authentication(new MyHash(), new Doc());
+            //IAuthentication authentication = new Authentication(new MyHash(), new Doc());
+            IAuthentication authentication = RepositoryFactory.GetIAuthentication();
             bool isValid = authentication.Verify(id, password);
 
             if (isValid==true)

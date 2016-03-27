@@ -2,7 +2,7 @@
 
 namespace WebBankSP
 {
-    public class Authentication
+    public class Authentication:IAuthentication
     {
         private IHash _hash;
         private IDoc _doc;
